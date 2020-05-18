@@ -1,0 +1,49 @@
+<form style="margin: 20px;">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="name"
+      name="name"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      [(ngModel)]="email"
+      name="email"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      required
+    />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Qualification</label>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="qualification"
+      name="qualification"
+      id="exampleInputPassword1"
+      required
+    />
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1"
+      >Accept Terms and conditions*</label
+    >
+  </div>
+  <button (click)="addNew()" type="submit" id="submit"  class="btn btn-primary" >
+    Submit
+  </button>
+</form>
